@@ -1,0 +1,90 @@
+body {
+  background-image: linear-gradient(160deg, #0c0c0c 0%, #555757 100%);
+  height: 50rem;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  position: fixed;
+  align-items: left;
+  top: 5%;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  display: table;
+  margin: 0;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  position: relative;
+  width: 33.333%;
+  display: table-cell;
+  text-align: center;
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.2s ease color;
+}
+
+nav a:hover {
+  color: rgb(20, 204, 189);
+}
+
+nav a:nth-child(1):hover{
+    background: -webkit-linear-gradient(left,  rgb(17, 235, 243) , rgb(163, 50, 173));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;  
+}
+
+nav a:nth-child(2):hover{
+    background: -webkit-linear-gradient(left, rgb(163, 50, 173) , rgb(17, 235, 243));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+nav a:nth-child(3):hover{
+    background: -webkit-linear-gradient(left,  rgb(17, 235, 243) , rgb(163, 50, 173));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+section {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.occupation {
+  font-size: 3rem;
+  margin: 0;
+}
