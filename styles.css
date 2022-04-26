@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 * {
   margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
   color:rgb(249, 249, 249);
 }
 
 header {
+  background-color: rgb(40, 40, 40);
   position: fixed;
   width: 100%;
+  z-index: 1000;
   padding: 15px;
   text-align: left;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3 );
   font-size: 1.2rem;
 }
 
@@ -31,14 +32,9 @@ header nav a.active {
   -webkit-text-fill-color: transparent; 
 }
 
-body {
-  background: white;
-}
-
 .picture {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
 section {
@@ -54,41 +50,19 @@ section {
   align-items: center;
 }
 
-section:nth-child(1) {
-  background-image: linear-gradient(160deg, #0c0c0c 0%, #555757 100%);
-}
-
 section:nth-child(2) {
-  background-color: #0093E9;
   background-image: linear-gradient(180deg, #0c0c0c 0%, #555757 100%);  
 }
 section:nth-child(3) {
-  background-color: #8BC6EC;
   background-image: linear-gradient(180deg, #555757 0%, #0c0c0c 100%);
 }
 
 section:nth-child(4) {
-  background-color: #08AEEA;
   background-image: linear-gradient(180deg, #0c0c0c 0%, #555757 100%);
 }
 
 section .container {
   margin: 100px;
-}
-
-section .text-container {
-  display: flex;
-}
-section .text-container .text-box {
-  margin: 20px;
-  padding: 20px;
-  background: #00c2cb;
-}
-section .text-container .text-box h3 {
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .reveal {
@@ -105,18 +79,16 @@ section .text-container .text-box h3 {
 
 .name {
   font-size: 7rem;
-  margin: 0;
 }
 
 .occupation {
   font-size: 2.5rem;
-  margin: 0;
 }
 
 @media screen and (max-width: 600px) {
 
   header {
-    font-size: 1rem;
+    font-size: 1 rem;
   }
   
   header nav a {
