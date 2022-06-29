@@ -27,7 +27,7 @@ header nav a:hover,
 header nav a.active {
   transition: 0.5s ease-out;
   font-size: 1.7rem;
-  background: -webkit-linear-gradient(left,  rgb(17, 235, 243) , rgb(233, 78, 247));
+  background: -webkit-linear-gradient(left,  rgb(243, 175, 17) , rgb(233, 78, 247));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
 }
@@ -51,18 +51,18 @@ section {
 }
 
 section:nth-child(2) {
-  background-image: linear-gradient(180deg, #0c0c0c 0%, #555757 100%);  
+  background-image: linear-gradient(180deg, #575758 0%, #2c2c2f 100%);  
 }
 section:nth-child(3) {
-  background-image: linear-gradient(180deg, #555757 0%, #0c0c0c 100%);
+  background-image: linear-gradient(180deg, #2c2c2f 0%, #575758 100%);
 }
 
 section:nth-child(4) {
-  background-image: linear-gradient(180deg, #0c0c0c 0%, #555757 100%);
+  background-image: linear-gradient(180deg, #575758 0%, #2c2c2f 100%);
 }
 
 section .container {
-  margin: 100px;
+  margin: 70px;
 }
 
 .reveal {
@@ -78,46 +78,72 @@ section .container {
 }
 
 .name {
-  font-size: 7rem;
+  font-size: 5rem;
+  color: #e97116;
 }
 
 .occupation {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 600px) {
 
-  header {
-    font-size: 1 rem;
-  }
+/* Education */
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.school {
+  font-size: 3rem;
+  color: #e97116;
+}
+
+.degree {
+  font-size: 1.5rem;
+}
+
+.education-info {
+  display: flex;
+  columns: 2;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 600px) {
   
   header nav a {
     padding: 1px 10px;
   }
-  
-  header nav a:hover,
-  header nav a.active {
-    font-size: 1.3rem;
-  }
+
   .bio {
     display: inline;
-    padding: 10rem;
   }
 
   .picture {
-    padding-top: 1rem;
-    max-width: auto;
-  }
-
-  section {
-    min-height: 100vh;
+    margin: 0.5rem;
   }
 
   .name {
-    font-size: 2.0rem;
+    font-size: 3.0rem;
   }
   
   .occupation {
-    font-size: 1.0rem;
+    font-size: 1.5rem;
+  }
+
+  .education-info {
+    display: inline;
+  }
+  
+  .logo {
+    margin: 0.5rem;
+  }
+  .school {
+    font-size: 3rem;
+  }
+  
+  .degree {
+    font-size: 1rem;
   }
 }
